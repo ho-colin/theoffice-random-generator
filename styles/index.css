@@ -6,7 +6,17 @@ th{
     text-align: right;
 }
 table{
-    font-size: 30px;
+    font-size: 23px;
+}
+
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    table{ font-size: 35px;}
+    #lijst>li{ font-size: 35px; }
+    #lijstDiv {height: 100%; border: none;}
 }
 
 #randomAflBtn {
@@ -45,4 +55,39 @@ a{
 a:visited{
     color: dodgerblue;
     text-decoration: none;
+}
+
+.col-xl-6{
+    border: 3px solid #1C6EA4;
+    border-radius: 10px;
+    height: 300px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#creditsBtn {
+    background-color:#ffec64;
+    border-radius:28px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:17px;
+    font-weight:bold;
+    padding:2px 21px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+#creditsBtn:hover {
+    background-color:#ffab23;
+}
+#creditsBtn:active {
+    position:relative;
+    top:1px;
+}
+
+.onzichtbaar{
+    visibility: hidden;
 }

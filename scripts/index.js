@@ -1,6 +1,9 @@
 const setup = () => {
     let randomAflBtn = document.querySelector('#randomAflBtn');
     randomAflBtn.addEventListener('click',kiesAflevering);
+
+    let creditsBtn = document.querySelector('#creditsBtn');
+    creditsBtn.addEventListener('click',credits);
 }
 
 const kiesAflevering = () =>{
@@ -33,7 +36,14 @@ const kiesAflevering = () =>{
 
 const markBekeken = (event) =>{
     let doel = event.currentTarget;
+    if(doel !== event.target) return;
     doel.classList.toggle('bekeken');
+}
+
+const credits = () =>{
+
+    let creditsDiv = document.querySelector('#creditsDiv');
+    creditsDiv.classList.toggle('onzichtbaar');
 }
 
 window.addEventListener("load", setup);
